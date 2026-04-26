@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>VA Masterclass | From Learning to Earning in 14 Days</title>
+  <!-- Google Fonts + Tailwind + Motion (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/motion/10.16.4/motion.js"></script>
+  <!-- Font: Inter + Display for headings -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0A0A0A;
+      color: #EAEAEA;
+    }
+    .font-display {
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    }
+    /* custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #121212;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #FACC15;
+      border-radius: 10px;
+    }
+    /* details marker removal */
+    summary {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    .bg-brand-bg {
+      background-color: #0A0A0A;
+    }
+    .bg-brand-card {
+      background-color: #111111;
+    }
+    .text-brand-primary {
+      color: #FACC15;
+    }
+    .bg-brand-primary {
+      background-color: #FACC15;
+    }
+    .border-brand-primary {
+      border-color: #FACC15;
+    }
+    .ring-brand-primary {
+      ring-color: #FACC15;
+    }
+    .shadow-glow {
+      box-shadow: 0 0 20px rgba(250, 204, 21, 0.25);
+    }
+    .hover-glow:hover {
+      box-shadow: 0 0 28px rgba(250, 204, 21, 0.4);
+    }
+    /* motion fallback */
+    .motion-div {
+      transition: transform 0.2s ease, opacity 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-brand-bg antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-[#0A0A0A]/80 backdrop-blur-md border-b border-white/5">
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 bg-[#FACC15] rounded-lg flex items-center justify-center font-bold text-black text-xl">
+        VA
+      </div>
+      <span class="font-display font-bold text-xl tracking-tight hidden sm:block">Masterclass</span>
+    </div>
+    <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+      <a href="#about" class="hover:text-[#FACC15] transition-colors">Course</a>
+      <a href="#hiring" class="hover:text-[#FACC15] transition-colors">Hiring Process</a>
+      <a href="#curriculum" class="hover:text-[#FACC15] transition-colors">Skills</a>
+      <a href="#results" class="hover:text-[#FACC15] transition-colors">Success Stories</a>
+      <a href="#faq" class="hover:text-[#FACC15] transition-colors">FAQ</a>
+    </div>
+    <a href="#enroll" class="bg-[#FACC15] text-black px-5 py-2.5 rounded-full text-sm font-semibold hover:shadow-[0_0_20px_rgba(250,204,21,0.3)] transition-all duration-300">Apply Now</a>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-6 overflow-hidden" id="about">
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#FACC15]/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+      <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div class="motion-div" data-motion="fade-up">
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#FACC15]/10 border border-[#FACC15]/20 rounded-full text-[#FACC15] text-xs font-bold uppercase tracking-widest mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="inline"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            Limited Slots Available
+          </div>
+          <h1 class="font-display text-5xl lg:text-7xl font-bold leading-tight mb-6 mt-2">
+            From Learning to <span class="text-[#FACC15]">Earning</span> in 14 Days.
+          </h1>
+          <p class="text-gray-400 text-lg mb-10 max-w-lg leading-relaxed">
+            Master the high-income skills of a modern Virtual Assistant. Learn tools, automation, and lead generation with a guaranteed path to employment.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#enroll" class="bg-[#FACC15] text-black px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 hover:scale-105 transition-transform duration-300">
+              Start Your Career <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="flex flex-col justify-center px-4">
+              <span class="text-2xl font-bold leading-none">₱3,499</span>
+              <span class="text-gray-500 text-sm line-through">₱12,879 Regular Value</span>
+            </div>
+          </div>
+        </div>
+        <div class="relative motion-div" data-motion="scale">
+          <div class="aspect-square rounded-3xl overflow-hidden bg-[#111] shadow-2xl relative z-10">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1000" alt="Virtual Assistant Working" class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer">
+          </div>
+          <div class="absolute -bottom-6 -left-6 bg-[#0A0A0A] border border-white/10 p-6 rounded-2xl shadow-xl z-20 backdrop-blur-xl">
+             <div class="flex items-center gap-4">
+                <div class="flex -space-x-3">
+                  <div class="w-8 h-8 rounded-full border-2 border-[#0A0A0A] bg-gray-700 overflow-hidden"><img src="https://i.pravatar.cc/100?img=11" alt="user" referrerPolicy="no-referrer" class="w-full h-full object-cover"></div>
+                  <div class="w-8 h-8 rounded-full border-2 border-[#0A0A0A] bg-gray-700 overflow-hidden"><img src="https://i.pravatar.cc/100?img=12" alt="user" referrerPolicy="no-referrer" class="w-full h-full object-cover"></div>
+                  <div class="w-8 h-8 rounded-full border-2 border-[#0A0A0A] bg-gray-700 overflow-hidden"><img src="https://i.pravatar.cc/100?img=13" alt="user" referrerPolicy="no-referrer" class="w-full h-full object-cover"></div>
+                  <div class="w-8 h-8 rounded-full border-2 border-[#0A0A0A] bg-gray-700 overflow-hidden"><img src="https://i.pravatar.cc/100?img=14" alt="user" referrerPolicy="no-referrer" class="w-full h-full object-cover"></div>
+                </div>
+                <div>
+                  <p class="text-sm font-bold leading-tight">1,200+ Grads</p>
+                  <p class="text-xs text-gray-400">Successfully Hired</p>
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hiring Guarantee Section -->
+    <section id="hiring" class="py-24 px-6 bg-[#111111]/30 border-y border-white/5 relative overflow-hidden">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="font-display text-4xl font-bold mb-4">Our Guaranteed Hiring Protocol</h2>
+        <p class="text-gray-400">We don't just teach you; we put you to work.</p>
+      </div>
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 relative">
+        <div class="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-4 z-0">
+          <div class="w-px h-24 bg-gradient-to-b from-transparent via-[#FACC15]/50 to-transparent"></div>
+          <div class="w-4 h-4 rounded-full bg-[#FACC15] shadow-[0_0_15px_rgba(250,204,21,0.6)]"></div>
+          <div class="w-px h-24 bg-gradient-to-t from-transparent via-[#FACC15]/50 to-transparent"></div>
+        </div>
+        <div class="bg-[#111111] p-10 rounded-3xl border border-white/10 text-left relative motion-div" data-motion="slide-left">
+          <div class="w-12 h-12 bg-[#FACC15]/20 rounded-xl flex items-center justify-center text-[#FACC15] mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Week 1: Mastery & Exam</h3>
+          <p class="text-gray-400 mb-6 font-medium">Intense daily training + practical workshops. If you pass the final week assessment:</p>
+          <div class="bg-[#FACC15]/10 p-5 rounded-2xl border border-[#FACC15]/30">
+            <div class="flex items-center gap-3 text-[#FACC15] font-bold text-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Immediate Hire
+            </div>
+            <p class="text-sm text-gray-300 mt-2">Placed directly with our high-value corporate partners.</p>
+          </div>
+        </div>
+        <div class="bg-[#111111] p-10 rounded-3xl border border-white/10 text-left relative motion-div" data-motion="slide-right">
+          <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-white mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Week 2: Secondary Placement</h3>
+          <p class="text-gray-400 mb-6">Didn't pass the first exam? We double down on your training.</p>
+          <div class="bg-white/5 p-5 rounded-2xl border border-white/10">
+            <div class="flex items-center gap-3 text-white font-bold text-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Guaranteed Placement
+            </div>
+            <p class="text-sm text-gray-400 mt-2">Receive specialized mentoring to ensure you are hired by our network by the end of week 2.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curriculum Skills Section -->
+    <section id="curriculum" class="py-24 px-6 max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="font-display text-4xl font-bold mb-4">The Skillset You'll Own</h2>
+        <p class="text-gray-400">Master the tools that make VAs indispensable.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="p-6 bg-[#111111] border border-white/5 rounded-2xl text-center hover:-translate-y-1 transition-all duration-300"><div class="mb-4 flex justify-center text-[#FACC15]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><span class="text-sm font-semibold">Social Media Management</span></div>
+        <div class="p-6 bg-[#111111] border border-white/5 rounded-2xl text-center hover:-translate-y-1 transition-all duration-300"><div class="mb-4 flex justify-center text-[#FACC15]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><span class="text-sm font-semibold">Email & Calendar</span></div>
+        <div class="p-6 bg-[#111111] border border-white/5 rounded-2xl text-center hover:-translate-y-1 transition-all duration-300"><div class="mb-4 flex justify-center text-[#FACC15]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><span class="text-sm font-semibold">Lead Generation</span></div>
+        <div class="p-6 bg-[#111111] border border-white/5 rounded-2xl text-center hover:-translate-y-1 transition-all duration-300"><div class="mb-4 flex justify-center text-[#FACC15]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><span class="text-sm font-semibold">CRM Management</span></div>
+        <div class="p-6 bg-[#111111] border border-white/5 rounded-2xl text-center hover:-translate-y-1 transition-all duration-300"><div class="mb-4 flex justify-center text-[#FACC15]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><span class="text-sm font-semibold">Project Management Tools</span></div>
+        <div class="p-6 bg-[#111111] border border-white/5 rounded-2xl text-center hover:-translate-y-1 transition-all duration-300"><div class="mb-4 flex justify-center text-[#FACC15]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><span class="text-sm font-semibold">AI Prompt Engineering</span></div>
+        <div class="p-6 bg-[#111111] border border-white/5 rounded-2xl text-center hover:-translate-y-1 transition-all duration-300"><div class="mb-4 flex justify-center text-[#FACC15]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><span class="text-sm font-semibold">Client Reporting</span></div>
+        <div class="p-6 bg-[#111111] border border-white/5 rounded-2xl text-center hover:-translate-y-1 transition-all duration-300"><div class="mb-4 flex justify-center text-[#FACC15]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><span class="text-sm font-semibold">Content Creation</span></div>
+      </div>
+    </section>
+
+    <!-- Testimonials (Success Stories) -->
+    <section id="results" class="py-24 px-6 bg-[#0A0A0A]">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="font-display text-4xl font-bold mb-4">Real Students. Real Results.</h2>
+          <p class="text-gray-400 underline decoration-[#FACC15] underline-offset-8">Proof that our process works</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-[#111111] p-6 rounded-2xl border border-white/5 relative overflow-hidden group transition-all hover:border-[#FACC15]/30"><div class="absolute top-0 left-0 w-full h-1 bg-[#FACC15] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div><div class="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-[#FACC15]/20"><img src="https://i.pravatar.cc/150?img=15" alt="Maria" referrerPolicy="no-referrer" class="w-full h-full object-cover"></div><div class="flex items-center gap-1 text-[#FACC15] mb-2">★★★★★</div><h4 class="font-bold text-lg">Maria S.</h4><p class="text-sm text-gray-400 mb-3 underline decoration-white/10">Working as Lead Gen VA</p><div class="flex items-center gap-2"><span class="text-xs text-gray-500 uppercase font-bold tracking-tighter">Current Salary:</span><span class="text-[#FACC15] font-bold">₱120,000/month</span></div></div>
+          <div class="bg-[#111111] p-6 rounded-2xl border border-white/5 relative overflow-hidden group transition-all hover:border-[#FACC15]/30"><div class="absolute top-0 left-0 w-full h-1 bg-[#FACC15] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div><div class="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-[#FACC15]/20"><img src="https://i.pravatar.cc/150?img=16" alt="John" referrerPolicy="no-referrer" class="w-full h-full object-cover"></div><div class="flex items-center gap-1 text-[#FACC15] mb-2">★★★★★</div><h4 class="font-bold text-lg">John C.</h4><p class="text-sm text-gray-400 mb-3 underline decoration-white/10">Working as Lead Gen VA</p><div class="flex items-center gap-2"><span class="text-xs text-gray-500 uppercase font-bold tracking-tighter">Current Salary:</span><span class="text-[#FACC15] font-bold">₱150,000/month</span></div></div>
+          <div class="bg-[#111111] p-6 rounded-2xl border border-white/5 relative overflow-hidden group transition-all hover:border-[#FACC15]/30"><div class="absolute top-0 left-0 w-full h-1 bg-[#FACC15] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div><div class="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-[#FACC15]/20"><img src="https://i.pravatar.cc/150?img=17" alt="Anne" referrerPolicy="no-referrer" class="w-full h-full object-cover"></div><div class="flex items-center gap-1 text-[#FACC15] mb-2">★★★★★</div><h4 class="font-bold text-lg">Anne R.</h4><p class="text-sm text-gray-400 mb-3 underline decoration-white/10">Working as Lead Gen VA</p><div class="flex items-center gap-2"><span class="text-xs text-gray-500 uppercase font-bold tracking-tighter">Current Salary:</span><span class="text-[#FACC15] font-bold">₱120,000/month</span></div></div>
+          <div class="bg-[#111111] p-6 rounded-2xl border border-white/5 relative overflow-hidden group transition-all hover:border-[#FACC15]/30"><div class="absolute top-0 left-0 w-full h-1 bg-[#FACC15] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div><div class="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-[#FACC15]/20"><img src="https://i.pravatar.cc/150?img=18" alt="Mark" referrerPolicy="no-referrer" class="w-full h-full object-cover"></div><div class="flex items-center gap-1 text-[#FACC15] mb-2">★★★★★</div><h4 class="font-bold text-lg">Mark D.</h4><p class="text-sm text-gray-400 mb-3 underline decoration-white/10">Working as Lead Gen VA</p><div class="flex items-center gap-2"><span class="text-xs text-gray-500 uppercase font-bold tracking-tighter">Current Salary:</span><span class="text-[#FACC15] font-bold">₱180,000/month</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enrollment Section -->
+    <section id="enroll" class="py-24 px-6 relative">
+      <div class="max-w-5xl mx-auto bg-gradient-to-br from-[#FACC15] to-[#e6b800] rounded-[3rem] p-12 text-black relative overflow-hidden flex flex-col md:flex-row items-center gap-12 shadow-2xl">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(circle_at_center,_white,_transparent)] pointer-events-none"></div>
+        <div class="flex-1 relative z-10 text-center md:text-left">
+          <h2 class="font-display text-4xl font-black mb-6">Ready to change your life?</h2>
+          <div class="space-y-4 mb-8">
+            <div class="flex items-center gap-4 bg-black/10 p-4 rounded-2xl backdrop-blur-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              <div><p class="font-bold">GoTyme Bank</p><p class="text-sm">Account: 011657354374</p></div>
+            </div>
+            <div class="flex items-center gap-4 bg-black/10 p-4 rounded-2xl backdrop-blur-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+              <div><p class="font-bold">Submit Receipt</p><p class="text-sm">practicetrade4@gmail.com</p></div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 text-sm font-bold bg-black text-white px-4 py-2 rounded-full w-fit mx-auto md:mx-auto md:mx-0"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> 100% Secured Enrollment</div>
+        </div>
+        <div class="w-full md:w-80 bg-white p-8 rounded-3xl shadow-xl relative z-10">
+          <p class="text-gray-500 font-bold text-center uppercase tracking-widest text-xs mb-2">Total Program Fee</p>
+          <div class="text-center mb-6"><p class="text-gray-400 line-through">₱12,879</p><p class="text-5xl font-black text-black leading-tight">₱3,499</p></div>
+          <ul class="space-y-3 mb-8"><li class="flex items-center gap-2 text-sm text-gray-700 font-medium"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 1 Month Intensive</li><li class="flex items-center gap-2 text-sm text-gray-700 font-medium"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="green"><polyline points="20 6 9 17 4 12"/></svg> Daily Live Sessions</li><li class="flex items-center gap-2 text-sm text-gray-700 font-medium"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="green"><polyline points="20 6 9 17 4 12"/></svg> Hiring Guarantee</li><li class="flex items-center gap-2 text-sm text-gray-700 font-medium"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="green"><polyline points="20 6 9 17 4 12"/></svg> Certifications</li></ul>
+          <button class="w-full bg-black text-white py-4 rounded-2xl font-bold hover:bg-gray-900 transition-colors shadow-md">Enroll Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 px-6 max-w-4xl mx-auto">
+      <div class="text-center mb-16"><h2 class="font-display text-4xl font-bold">Your Questions, Answered</h2></div>
+      <div class="space-y-4">
+        <details class="group bg-[#111111] border border-white/5 rounded-2xl p-6 cursor-pointer transition-all"><summary class="flex justify-between items-center font-bold text-lg list-none">Is this beginner-friendly?<svg class="text-[#FACC15] transition-transform group-open:rotate-180" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></summary><p class="mt-4 text-gray-400 leading-relaxed">Absolutely. We start from the basics of digital tools and work our way up to advanced automation.</p></details>
+        <details class="group bg-[#111111] border border-white/5 rounded-2xl p-6 cursor-pointer"><summary class="flex justify-between items-center font-bold text-lg list-none">Do I need a high-end computer?<svg class="text-[#FACC15] transition-transform group-open:rotate-180" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></summary><p class="mt-4 text-gray-400 leading-relaxed">Any working laptop/PC with a stable internet connection is enough to get started.</p></details>
+        <details class="group bg-[#111111] border border-white/5 rounded-2xl p-6 cursor-pointer"><summary class="flex justify-between items-center font-bold text-lg list-none">Is the training conducted live?<svg class="text-[#FACC15] transition-transform group-open:rotate-180" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></summary><p class="mt-4 text-gray-400 leading-relaxed">Yes, all sessions are live to ensure you can ask questions and get real-time feedback.</p></details>
+        <details class="group bg-[#111111] border border-white/5 rounded-2xl p-6 cursor-pointer"><summary class="flex justify-between items-center font-bold text-lg list-none">Tell me more about the hiring guarantee.<svg class="text-[#FACC15] transition-transform group-open:rotate-180" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></summary><p class="mt-4 text-gray-400 leading-relaxed">If you pass the week 1 exam, you are hired immediately. If not, we provide intensive support in week 2 until you secure a placement.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 border-t border-white/5 bg-[#0A0A0A]">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div><div class="flex items-center gap-2 mb-4"><div class="w-8 h-8 bg-[#FACC15] rounded-lg flex items-center justify-center font-bold text-black text-sm">VA</div><span class="font-display font-bold text-lg tracking-tight">Masterclass</span></div><p class="text-sm text-gray-500">Transforming lives through digital excellence.</p></div>
+      <div class="flex gap-8 text-sm text-gray-400"><a href="#" class="hover:text-white transition-colors">Privacy</a><a href="#" class="hover:text-white transition-colors">Terms</a><a href="mailto:practicetrade4@gmail.com" class="hover:text-white transition-colors">Contact</a></div>
+      <p class="text-xs text-gray-600">© 2026 VA Masterclass. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- simple motion intersection observer for fade/scale/slide -->
+  <script>
+    (function() {
+      // if motion lib is available, use it; otherwise fallback to CSS transitions
+      const animateElements = document.querySelectorAll('[data-motion]');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const type = el.getAttribute('data-motion');
+            if (type === 'fade-up') {
+              el.style.opacity = '0';
+              el.style.transform = 'translateY(30px)';
+              el.style.transition = 'opacity 0.6s cubic-bezier(0.2, 0.9, 0.4, 1.1), transform 0.5s ease';
+              setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'translateY(0)'; }, 100);
+            } else if (type === 'scale') {
+              el.style.opacity = '0';
+              el.style.transform = 'scale(0.95)';
+              el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+              setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'scale(1)'; }, 100);
+            } else if (type === 'slide-left') {
+              el.style.opacity = '0';
+              el.style.transform = 'translateX(-40px)';
+              el.style.transition = 'opacity 0.6s ease, transform 0.5s ease';
+              setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'translateX(0)'; }, 100);
+            } else if (type === 'slide-right') {
+              el.style.opacity = '0';
+              el.style.transform = 'translateX(40px)';
+              el.style.transition = 'opacity 0.6s ease, transform 0.5s ease';
+              setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'translateX(0)'; }, 100);
+            }
+            observer.unobserve(el);
+          }
+        });
+      }, { threshold: 0.2, rootMargin: "0px 0px -20px 0px" });
+      
+      animateElements.forEach(el => {
+        el.style.opacity = '0';
+        observer.observe(el);
+      });
+      
+      // also automatically add small fade for regular visible content (skill cards, testimonials)
+      const cards = document.querySelectorAll('#curriculum .grid > div, #results .grid > div');
+      cards.forEach((card, idx) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(15px)';
+        card.style.transition = 'opacity 0.4s ease, transform 0.3s ease';
+        const cardObs = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = '1';
+              entry.target.style.transform = 'translateY(0)';
+              cardObs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        cardObs.observe(card);
+      });
+      
+      // initial hero manual trigger
+      const heroDiv = document.querySelector('.motion-div');
+      if (heroDiv) {
+        setTimeout(() => {
+          heroDiv.style.opacity = '1';
+          heroDiv.style.transform = 'translateY(0)';
+        }, 200);
+      }
+    })();
+  </script>
+</body>
+</html>
